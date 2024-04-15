@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %} 
+    <section class="text-center">
+        <div class="container p-5">
+            <div class="row">
+                <div class="d-md-flex align-items-center justify-content-evenly">
+                    <h1 class="col text-center">{{ current_user.email}}'s user profile</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-center">
+    <div class="container p-10">
+        <div class="row">
+            <h3 class="p-5">Here are your user details!</h3>
+            <ul class="list-group">
+                <li class="list-group-item">Email: {{ current_user.email }}</li>
+                <li class="list-group-item">Token: {{ current_user.token }} </li> 
+            </ul>
+        </div>
+        <div class="container p-5">
+            <div class="row">
+                <div class="d-flex align-items-center justify-content-center">
+                    <img src="../../static/images/cocktail-bar.jpg" class="img-fluid p-5" alt="bar" id="index_img">
+                </div>
+            <div class="col-3"></div>
+        </div>
+    </div>
+    </section>
+{% endblock %}
+

@@ -1,0 +1,27 @@
+<form method="POST">
+    {{ form.hidden_tag() }}
+    <div class="form-group">
+        <fieldset id="email-field">
+            {{ form.email.label }}
+            {{ form.email(class = 'form-control', placeholder = 'Place email here ') }}
+        </fieldset>
+    </div>
+
+        <fieldset id="pass-field">
+            {{ form.password.label }}
+            {{ form.password(class = "form-control", placeholder = "Place password here ") }}
+        </fieldset>
+
+        <!-- Submit button -->
+        {{ form.submit_button(class = "btn btn-primary btn-block mt-2")}}
+
+<section>
+    <div class="container p-5">
+        <div class="row">
+            <div class="d-flex align-items-center justify-content-center">
+                <img src="../../static/images/cocktail-bar.png" class="img-fluid p-5" alt="bar" id="index_img"><br>
+                <div class="center text-lg" id="intro-text"> your CAR INVENTORY DATABASE</div>
+            </div>
+</section>
+
+</form>

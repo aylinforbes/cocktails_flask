@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block content %} 
+
+<!-- Intro -->
+<section class="text-center">
+    <div class="container p-5">
+        <div class="row">
+            <div class="d-flex align-items-center justify-content-center">
+                <img src="../../static/images/beach-cocktails.jpg" class="img-fluid p-5" alt="beach-bar" id="index_img">
+                <div class="center text-lg" id="intro-text">CAR INVENTORY DATABASE</div>
+            </div>
+
+            <div>
+                <button class="btn btn-danger"><a href="{{ url_for('auth.signup') }}">Get Started</button></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+            <!-- Database Info -->
+<section class="features-tile">
+    <div class="d-flex align-items-center justify-content-center">
+        <h3>keep your drink fix in good hands</h3>
+    </div>
+    <div class="main-tile-dimension">
+        <div class="features">
+            <div class="image-container-features">
+                <img src="../static/images/long-island.jpg" alt="long-island">
+            </div>
+            <div class="perk-name">
+                <h2>Mixed Drinks</h2>
+            </div>
+            <div class="perk-info">Ingredients</div>
+        </div>
+        <div class="features">
+            <div class="image-container-features">
+                <img src="../static/images/types_whiskey.jpg" alt="whiskey">
+            </div>
+            <div class="perk-name">
+                <h2>Whiskey Bar</h2>
+            </div>
+            <div class="perk-info">From A to Z</div>
+        </div>
+        <div class="features">
+            <div class="image-container-features">
+                <img src="../static/images/beer.jpg" alt="mercury">
+            </div>
+            <div class="perk-name">
+                <h2>Beers of the world</h2>
+            </div>
+            <div class="perk-info">Homecraft to Worldcraft</div>
+        </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
